@@ -1,0 +1,53 @@
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card{
+        margin: 15px;
+        width: 500px;
+        height: 350px;
+        border: 2px solid red;
+        border-radius: 20px;
+        display: flex;
+        position: relative;
+        background-color: #f1e3dd;
+        transition: 0.5s;
+
+        &:hover{
+            box-shadow: 20px 20px 50px #87bdd8;
+            transform: scale(1.01);
+        }
+
+        img{
+            width: 200px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px 0 0 20px;
+        }
+        .delete{
+            position: absolute;
+            z-index: 1;
+            height: 350px;
+            width: 200px;
+            border-radius: 20px 0 0 20px;
+            border: none;
+            font-size: 30px;
+            font-weight: bold;
+            opacity: 0;
+
+            &:hover{
+                opacity: 0.5;
+                background-color: orangered;
+                color: whitesmoke;
+                cursor: pointer;
+            }
+        }
+        .card-body{
+            margin-left: 15px;
+            p:first-child{
+                text-align: center;
+            }
+        }
+    }
+}
