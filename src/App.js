@@ -14,14 +14,18 @@ function App() {
 
   const newBookAdd = (newBook) => {
     // setBooks([...books,newBook]);
-    setBooks(prev =>[...prev,newBook])
+    setBooks(prev =>[...prev,newBook]);
+  }
+
+  const deleteBook = (id) => {
+    setBooks(books => books.filter(book => book.id !== id));
   }
 
   return (
     <>
     <Nav/>
     <Form newBookAdd = {newBookAdd} bookList={books}/>
-    <CardList card={books}/>
+    <CardList card={books} deleteBook={deleteBook}/>
     <Footer/>
     </>
   );

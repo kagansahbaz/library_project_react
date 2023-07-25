@@ -1,11 +1,11 @@
 import React from "react";
 import "../style/card.scss";
 
-function Card({book}) {
+function Card({book, deleteBook}) {
   return (
     <div className="card-container">
       <div className="card">
-        <button className="delete" title="Remove!">
+        <button onClick={()=>deleteBook(book.id)} className="delete" title="Remove!">
           DELETE
         </button>
         <img src={book.bookCoverUrl} alt="Book Cover" />
@@ -14,7 +14,7 @@ function Card({book}) {
           <p>Yazar: {book.author}</p>
           <p>Kategori: {book.category}</p>
           <p>Sayfa Sayısı: {book.page}</p>
-          <p>Açıklama: {book.bookDescription}</p>
+          <p><b>Açıklama:</b> {book.bookDescription}</p>
         </div>
       </div>
     </div>
