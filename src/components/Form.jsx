@@ -20,6 +20,12 @@ function Form({newBookAdd, bookList}) {
       page: page,
       bookDescription: bookDescription,
     });
+    setBookCategory("Kategori Seçiniz...");
+    setBookName("");
+    setAuthor("");
+    setPage("");
+    setBookDescription("");
+    setBookCoverUrl("");
   };
 
   return (
@@ -30,9 +36,10 @@ function Form({newBookAdd, bookList}) {
         onChange={(e) => setBookCategory(e.target.value)}
       >
         <option value={"empty"}>Kategori Seçiniz...</option>
-        <option>Software</option>
-        <option>History</option>
-        <option>Biogrophy</option>
+        <option value={1}>Software</option>
+        <option value={2}>History</option>
+        <option value={3}>Biogrophy</option>
+        <option value={4}>Detective</option>
       </select>
       <input
         value={bookName}

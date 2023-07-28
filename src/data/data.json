@@ -1,36 +1,49 @@
 {
-    "books":[
-        {
-            "id":1,
-            "bookName": "Antika Titanik",
-            "author": "Murat Menteş",
-            "category": "Polisiye",
-            "bookCoverUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0001776436001-1.jpg",
-            "page": 360,
-            "bookDescription": "İçinizde aksiyon filmi izlemişçesine heyecan uyandıracak ve hayranlığa sebep olacak Murat Menteş'in Antika Titanik adlı eseri; fantastik kurgusu ve karakterleri, zaman zaman argo jargonu ve olağanüstü hayal gücü ile oldukça sürükleyici bir roman..."
-          },
-          {
-            "id":2,
-            "bookName": "Beyaz Zambaklar Ülkesinde",
-            "author": "Grigory Petrov",
-            "category": "Roman",
-            "bookCoverUrl": "https://image01.idefix.com/resize/800/0/product/313861/beyaz-zambaklar-ulkesinde-6437aa54065ed.jpg",
-            "page": 360,
-            "bookDescription": "Yazar Grigoriy Petrov'un çeşitli aralıklarla çıktığı Finlandiya seyahatlerindeki notlardan oluşan eser 1800'lerin son döneminde Finlandiya halkının içinde bulunduğu durumu, cehaletten kurtulmak için başta Johan Vilhelm Snellman olmak üzere ülkedeki bir avuç Fin aydının verdiği olağanüstü mücadeleyi anlatır..."
-          }
-    ],
-    "categories":[
-        {
-            "categoryId":1,
-            "categoryName":"software"
-        },
-        {
-            "categoryId":2,
-            "categoryName":"history"
-        },
-        {
-            "categoryId":3,
-            "categoryName":"biography"
-        }
-    ]
+  "books": [
+    {
+      "id": 1,
+      "bookName": "Antika Titanik",
+      "author": "Murat Menteş",
+      "categoryId": 4,
+      "bookCoverUrl": "https://i.dr.com.tr/cache/500x400-0/originals/0001776436001-1.jpg",
+      "page": 360,
+      "bookDescription": "İçinizde aksiyon filmi izlemişçesine heyecan uyandıracak ve hayranlığa sebep olacak Murat Menteş'in Antika Titanik adlı eseri; fantastik kurgusu ve karakterleri, zaman zaman argo jargonu ve olağanüstü hayal gücü ile oldukça sürükleyici bir roman..."
+    },
+    {
+      "id": 2,
+      "bookName": "Beyaz Zambaklar Ülkesinde",
+      "author": "Grigory Petrov",
+      "categoryId": 2,
+      "bookCoverUrl": "https://image01.idefix.com/resize/800/0/product/313861/beyaz-zambaklar-ulkesinde-6437aa54065ed.jpg",
+      "page": 360,
+      "bookDescription": "Yazar Grigoriy Petrov'un çeşitli aralıklarla çıktığı Finlandiya seyahatlerindeki notlardan oluşan eser 1800'lerin son döneminde Finlandiya halkının içinde bulunduğu durumu, cehaletten kurtulmak için başta Johan Vilhelm Snellman olmak üzere ülkedeki bir avuç Fin aydının verdiği olağanüstü mücadeleyi anlatır..."
+    },
+    {
+      "id": 3,
+      "bookName": "Clean Code",
+      "author": "Robert C. Martin",
+      "categoryId": 1,
+      "bookCoverUrl": "https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg",
+      "page": "900",
+      "bookDescription": "Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t have to be that way."
+    }
+  ],
+  "categories": [
+    {
+      "categoryId": 1,
+      "categoryName": "Software"
+    },
+    {
+      "categoryId": 2,
+      "categoryName": "History"
+    },
+    {
+      "categoryId": 3,
+      "categoryName": "Biography"
+    },
+    {
+      "categoryId": 4,
+      "categoryName": "Detective"
+    }
+  ]
 }
