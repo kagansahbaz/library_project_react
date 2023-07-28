@@ -23,7 +23,8 @@ function App() {
 
     const response = await axios(url);
     const data = response.data;
-    setBooks(data);
+    const books = data.filter(book => book.isActive === true);
+    setBooks(books);
   };
 
   const getCategories = async () => {
@@ -38,6 +39,7 @@ function App() {
   useEffect(() => {
     getBooks();
     getCategories();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[selectedCategory]);
 
   const newBookAdd = async (newBook) => {
@@ -46,8 +48,10 @@ function App() {
     getBooks();
   }
 
-  const deleteBook = (id) => {
-    setBooks(books => books.filter(book => book.id !== id));
+  const deleteBook = async (id) => {
+    let url = `http://localhost:3005/books/${id}`;
+    await axios.patch(url,{isActive:false})
+    getBooks();
   }
 
   return (
